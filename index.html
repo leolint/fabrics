@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Melantex</title>
+</head>
+
+<body>
+    <header class="header"> 
+        <div id="headerMobileButton">
+            <span></span>
+            <span></span>
+            <span></span>
+            <p></p>
+        </div>
+        <div class="container">
+            <div class="header_wrapper">
+                <div class="header_wrapper-logo">
+                    <img src="/img/logo.png" alt="">
+                </div>
+                <nav class="header_wrapper-nav">
+                    <a href="#delivery">Умови доставки та оплати</a>
+                    <div class="contacts">
+                        <h6 class="contacts_title">Контакти</h6>
+                        <div class="contacts_content">
+                            <div class="contacts_content-wrapper">
+                                <a href="">+380000000000</a>
+                                <a href=""><img src="/img/telegram.png" alt="Telegram">Telegram</a>
+                                <a href=""><img src="/img/viber.png" alt="Viber">Viber</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basketLink">
+                        <h6 class="basketLink_title">Кошик</h6>
+                        <p id="counter" contenteditable>0</p>
+                        <div id="basketContent" class="basketLink_content">
+                            <div id="basket" class="basketLink_content-wrapper">
+                                <p id="emptyBasketTitle">Ви ще не обрали замовлення</p>
+                            </div>
+                            <form class="basketLink_content-form" id="basketForm" action="/action_page.php"
+                                method="get">
+                                <input type="text" placeholder="Ім'я">
+                                <input type="text" placeholder="Прізвище">
+                                <input type="tel" onkeypress='validate(event)' inputmode="numeric"
+                                    placeholder="Телефон">
+                                <input id="inputButton" type="submit" value="Замовити">
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="slider">
+                <div class="slider_wrapper">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="/img/white.jpg" alt="">
+                                <div class="swiper-slide_content">
+                                    <h3 class="swiper-slide_content--title">Нові надходження</h3>
+                                    <h4 class="swiper-slide_content--subtitle">Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Eaque, voluptatem</h4>
+                                    <button id="sliderNewButton">Продивитись товари</button>
+                                    <p class="swiper-slide_content--description">Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Eaque, voluptatem</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/purple.jpg" alt="">
+
+                                <div class="swiper-slide_content">
+                                    <h3 class="swiper-slide_content--title">Тканини</h3>
+                                    <h4 class="swiper-slide_content--subtitle">Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Eaque, voluptatem</h4>
+                                    <button id="sliderFabricsButton">Продивитись товари</button>
+                                    <p class="swiper-slide_content--description">Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Eaque, voluptatem</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/blue.jpg" alt="">
+                                <div class="swiper-slide_content">
+                                    <h3 class="swiper-slide_content--title">Готова Продукція</h3>
+                                    <h4 class="swiper-slide_content--subtitle">Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Eaque, voluptatem</h4>
+                                    <button id="sliderProductsButton">Продивитись товари</button>
+                                    <p class="swiper-slide_content--description">Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Eaque, voluptatem</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/orange.jpg" alt="">
+                                <div class="swiper-slide_content">
+                                    <h3 class="swiper-slide_content--title">Набори</h3>
+                                    <h4 class="swiper-slide_content--subtitle">Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Eaque, voluptatem</h4>
+                                    <button id="sliderSetsButton">Продивитись товари</button>
+                                    <p class="swiper-slide_content--description">Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Eaque, voluptatem</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="assortment">
+                <div class="assortment_preview">
+                    <div class="assortment_preview-item">
+                        <img src="/img/blue.jpg" alt="">
+                        <h2 class="assortment_preview-item--title">Комплект білизни</h2>
+                        <div class="assortment_preview-item--description">
+                            <h3>Склад : 100% бавовна</h3>
+                            <h4>У комплекті пододіяльник</h4>
+                        </div>
+                    </div>
+                    <div class="assortment_preview-item">
+                        <img src="/img/white.jpg" alt="">
+                        <h2 class="assortment_preview-item--title">Тканина</h2>
+                        <div class="assortment_preview-item--description">
+                            <h3>Склад : 100% бавовна</h3>
+                            <h4>Багато прінтів</h4>
+                        </div>
+                    </div>
+                    <div class="assortment_preview-item">
+                        <img src="/img/orange.jpg" alt="">
+                        <h2 class="assortment_preview-item--title">Постіль</h2>
+                        <div class="assortment_preview-item--description">
+                            <h3>Склад : 100% бавовна</h3>
+                            <h4>Різні розміри і комплекти</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="assortment-buttons">
+                    <button id="new">Нові надходження</button>
+                    <button id="fabrics">Тканини</button>
+                    <button id="products">Готова продукція</button>
+                    <button id="sets">Набори</button>
+                </div>
+                <div id="subcategories" class="assortment_categories">
+                    <button id="firstCategory">
+                        Бязь голд
+                    </button>
+                    <button id="secondCategory">
+                        Бязь голд Люкс
+                    </button>
+                </div>
+                <div class="assortment_wrapper">
+
+                </div>
+
+            </section>
+            <section class="about">
+                <div class="about_wrapper">
+                    <h2>Запрошуємо вас в світ затишку і комфорту з новою колекцією постільної білизни та тканин, які
+                        перетворять вашу спальню на місце відпочинку та релаксу.</h2>
+                    <p>Ми знаємо, що для вас важлива якість і комфорт вашого відпочинку. У нашій колекції представлені
+                        тканини та дизайни різних стилів, які створять ідеальну атмосферу для вашого сну. Виберіть
+                        найкраще для вашої спальні і дозвольте собі насолодитися м'якістю і затишком.</p>
+                    <p>Наші тканини та постільна білизна - це найкращий вибір для тих, хто цінує якість, комфорт та
+                        стиль. Ми використовуємо тільки найкращі матеріали, щоб наша продукція була максимально зручною
+                        та довговічною. Крім того, наші тканини та постільна білизна мають широкий вибір дизайнів, щоб
+                        задовольнити будь-який смак. Представте, як зручно буде лежати в своєму ліжку, оточеним якісними
+                        тканинами та красивою постільною білизною.</p>
+                    <p>Не відкладайте на завтра те, що можете зробити сьогодні. Виберіть свою улюблену тканину та
+                        постільну білизну прямо зараз! Оформіть замовлення на нашому сайті або завітайте до нашого
+                        магазину, щоб побачити наші продукти вживу. Наша команда готова допомогти вам з вибором та
+                        відповісти на всі ваші запитання. Оновіть свою спальню вже сьогодні з нашою колекцією постільної
+                        білизни та тканин!</p>
+                    </ </section>
+                    <section id="delivery" class="delivery">
+                        <div class="delivery_wrapper">
+                            <h3 class="delivery_wrapper-title">Умови доставки та оплати</h3>
+                            <ul class="delivery_wrapper-list">
+                                <li> <span>Способи доставки:</span> <br>
+
+                                    Кур'єрська доставка за вказаною адресою.
+                                    Самовивіз з пункту видачі замовлень або магазину партнера.
+                                    Доставка "Новою Поштою" або іншою транспортною компанією.</li>
+                                <li> <span>Вартість доставки:</span> <br>
+
+                                    Вартість доставки може залежати від місцезнаходження отримувача, ваги та об'єму
+                                    замовлення.
+                                </li>
+                                <li> <span>Терміни доставки:</span> <br>
+
+                                    Термін доставки також може залежати від місцезнаходження отримувача, вибраного
+                                    способу
+                                    доставки та наявності товару на складі.
+                                    Зазвичай термін доставки складає від 1 до 7 робочих днів.
+                                </li>
+                                <li> <span>Оплата:</span> <br>
+
+                                    Можливі різні способи оплати: готівкові, банківські карти, електронні платіжні
+                                    системи і
+                                    т.д.
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+    </main>
+    <footer class="footer">
+        <div class="footer_wrapper">
+            <div class="footer-info">
+                <h3>Melantex магазин постільної білизни</h3>
+                <p>Адреса: вул. , д. 10, офіс 123</p>
+                <p>Телефон: +3 (380) 456-78-90</p>
+                <p>Email: info@bedlinen.com</p>
+            </div>
+            <div class="footer-social">
+                <h3>Ми в соціальних мережах</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a>Facebook</li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a>Instagram</li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a>Twitter</li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 Bed Linen. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/counter.js"></script>
+    <script type="module" src="/js/renderAssortment.js"></script>
+    <script src="/js/items.js"></script>
+    <script src="/js/openNav.js"></script>
+    <script src="/json/openMobileMenu.js"></script>
+
+</body>
+
+</html>
