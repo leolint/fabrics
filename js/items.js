@@ -1,7 +1,7 @@
 export const arrayToRender = {
     items: [
         {
-            img: './img/white.jpg',
+            img: '/img/white.jpg',
             article: 'Номер 1',
             text: 'Постільна білизна біла',
             sizeL : 'L',
@@ -13,7 +13,7 @@ export const arrayToRender = {
             type : 'products'
         },
         {
-            img: './img/white.jpg',
+            img: '/img/white.jpg',
             article: 'Номер 2',
             text: 'Постільна білизна біла',
             sizeL : 'L',
@@ -25,7 +25,7 @@ export const arrayToRender = {
             type : 'products'
         },
         {
-            img: './img/white.jpg',
+            img: '/img/white.jpg',
             article: 'Номер 3',
             text: 'Постільна білизна біла',
             sizeL : 'L',
@@ -37,7 +37,7 @@ export const arrayToRender = {
             type : 'products'
         },
         {
-            img: './img/purple.jpg',
+            img: '/img/purple.jpg',
             article: 'Номер 4',
             text: 'Постільна білизна фіолетова',
             sizeL : 'L',
@@ -49,7 +49,7 @@ export const arrayToRender = {
             type : 'set'
         },
         {
-            img: './img/purple.jpg',
+            img: '/img/purple.jpg',
             article: 'Номер 1',
             text: 'Постільна білизна фіолетова',
             sizeL : 'L',
@@ -61,7 +61,7 @@ export const arrayToRender = {
             type : 'set'
         },
         {
-            img: './img/purple.jpg',
+            img: '/img/purple.jpg',
             article: 'Номер 2',
             text: 'Постільна білизна фіолетова',
             sizeL : 'L',
@@ -73,7 +73,7 @@ export const arrayToRender = {
             type : 'set' ,
         },
         {
-            img: './img/orange.jpg',
+            img: '/img/orange.jpg',
             article: 'Номер 4',
             text: 'Постільна білизна помаранчева',
             sizeL : 'L',
@@ -85,7 +85,7 @@ export const arrayToRender = {
             type : 'fabrics'
         },
         {
-            img: './img/orange.jpg',
+            img: '/img/orange.jpg',
             article: 'Номер 1',
             text: 'Постільна білизна помаранчева',
             sizeL : 'L',
@@ -97,7 +97,7 @@ export const arrayToRender = {
             type : 'fabrics'
         },
         {
-            img: './img/orange.jpg',
+            img: '/img/orange.jpg',
             article: 'Номер 2',
             text: 'Постільна білизна помаранчева',
             sizeL : 'L',
@@ -109,7 +109,7 @@ export const arrayToRender = {
             type : 'fabrics' ,
         },
         {
-            img: './img/blue.jpg',
+            img: '/img/blue.jpg',
             article: 'Номер 4',
             text: 'Постільна білизна синя',
             sizeL : 'L',
@@ -121,7 +121,7 @@ export const arrayToRender = {
             type : 'categorieOne'
         },
         {
-            img: './img/blue.jpg',
+            img: '/img/blue.jpg',
             article: 'Номер 1',
             text: 'Постільна білизна синя',
             sizeL : 'L',
@@ -133,7 +133,7 @@ export const arrayToRender = {
             type : 'categorieOne'
         },
         {
-            img: './img/blue.jpg',
+            img: '/img/blue.jpg',
             article: 'Номер 2',
             text: 'Постільна білизна синя',
             sizeL : 'L',
@@ -145,7 +145,7 @@ export const arrayToRender = {
             type : 'categorieOne' ,
         },
         {
-            img: './img/pink.jpg',
+            img: '/img/pink.jpg',
             article: 'Номер 4',
             text: 'Постільна білизна рожева',
             sizeL : 'L',
@@ -157,7 +157,7 @@ export const arrayToRender = {
             type : 'categorieTwo'
         },
         {
-            img: './img/pink.jpg',
+            img: '/img/pink.jpg',
             article: 'Номер 1',
             text: 'Постільна білизна рожева',
             sizeL : 'L',
@@ -169,7 +169,7 @@ export const arrayToRender = {
             type : 'categorieTwo'
         },
         {
-            img: './img/pink.jpg',
+            img: '/img/pink.jpg',
             article: 'Номер 2',
             text: 'Постільна білизна рожева',
             sizeL : 'L',
